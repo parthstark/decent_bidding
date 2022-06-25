@@ -272,7 +272,6 @@ class _SellNewItemState extends State<SellNewItem> {
     SnackBar snackBar = const SnackBar(
         content: Text('Go to Metamask and confirm the transaction'));
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
-    print(docUser.id);
     // Web3 Plugin
     final myContract = MyContract();
     final httpClient = Client();
@@ -284,10 +283,10 @@ class _SellNewItemState extends State<SellNewItem> {
     await ethClient.sendTransaction(
       signer,
       web3.Transaction.callContract(
-        value: web3.EtherAmount.inWei(BigInt.from(price * 1e18)),
+        value: web3.EtherAmount.inWei(BigInt.from(0.01 * 1e18)),
         contract: myContract.deployedContract,
         function: myFunction,
-        parameters: [docUser.id, BigInt.from(price * 1e18)],
+        parameters: [docUser.id, BigInt.from(0.01 * 1e18)],
         from: web3.EthereumAddress.fromHex(myWalletNotifier.account),
       ),
     );

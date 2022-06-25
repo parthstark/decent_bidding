@@ -1,6 +1,10 @@
 #firebase config file
 android/app/google-services.json
 
+# keystore properties
+android/app/upload-keystore.jks
+android/key.properties
+
 # Miscellaneous
 *.class
 *.log
