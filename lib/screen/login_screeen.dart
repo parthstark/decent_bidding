@@ -20,17 +20,30 @@ class Login extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   const Expanded(
-                      child: SizedBox(
-                    height: 1,
-                  )),
-                  IconButton(
-                      onPressed: () {
-                        Navigator.push(
+                    child: SizedBox(
+                      height: 1,
+                    ),
+                  ),
+                  Column(
+                    children: [
+                      IconButton(
+                        icon: const Icon(Icons.help),
+                        onPressed: () {
+                          Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const HelpScreen()));
-                      },
-                      icon: const Icon(Icons.help))
+                              builder: (context) => const HelpScreen(),
+                            ),
+                          );
+                        },
+                      ),
+                      Text(
+                        'Help',
+                        style: TextStyle(color: Colors.grey.shade800),
+                        textScaleFactor: 0.75,
+                      )
+                    ],
+                  )
                 ],
               ),
             ),
