@@ -1,16 +1,4 @@
-# decent_bidding
+# Decentralised Bid
+[Download from Play Store](https://play.google.com/store/apps/details?id=com.parthstark.decentbid)
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot from 2023-05-09 22-58-24](https://github.com/parthstark/decent_bidding/assets/54953233/aaa82480-c8f0-4d85-89f0-f0b93c7353eb)
